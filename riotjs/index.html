@@ -9,6 +9,16 @@
     <title>RiotJs</title>
   </head>
   <body>
+    <nav-bar></nav-bar>
+
+    <script src="./src/nav-bar.riot" type="riot"></script>
+    <script src="https://unpkg.com/riot@4/riot+compiler.min.js"></script>
+    <script>
+      (async function main() {
+        await riot.compile();
+        riot.mount("nav-bar");
+      })();
+    </script>
     <script src="./public/script/index.js" type="module"></script>
   </body>
 </html>
