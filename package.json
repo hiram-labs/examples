@@ -1,0 +1,22 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "Vanilla implementations of Hiram Lab Ltd packages and libraries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiram-labs/examples.git"
+  },
+  "author": "Owusu K",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiram-labs/examples/issues"
+  },
+  "homepage": "https://github.com/hiram-labs/examples#readme",
+  "dependencies": {
+    "riot": "^6.1.2"
+  }
+}
