@@ -4,8 +4,8 @@ Vanilla implementations of Hiram Lab Ltd packages and libraries.
 
 - Interactive Video Engine (ive)
 
-  [Demo]()
+  [Demo](https://hiram-labs.github.io/examples/ive/)
 
 - RiotJs Browser Compiler
 
-  [Demo]()
+  [Demo](https://hiram-labs.github.io/examples/riotjs/)
