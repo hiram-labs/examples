@@ -1,0 +1,54 @@
+.visual__container--center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 95px;
+}
+
+.visual__text--large {
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.visual__button--large {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px #fff, 2px 2px 0px 0px #fff, 3px 3px 0px 0px #fff,
+    4px 4px 0px 0px #fff, 5px 5px 0px 0px #fff;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 20px;
+}
+
+.visual__button--large:active {
+  box-shadow: 0px 0px 0px 0px #fff;
+  top: 5px;
+  left: 5px;
+}
+
+.visual__input--large {
+  margin-bottom: 20px;
+  height: 10%;
+  width: 30%;
+  border: solid 3px black;
+  box-shadow: 1px 1px 0px 0px #fff, 2px 2px 0px 0px #fff, 3px 3px 0px 0px #fff,
+    4px 4px 0px 0px #fff, 5px 5px 0px 0px #fff;
+}
