@@ -1,0 +1,26 @@
+<nav-bar>
+  <main>This component is implemented using browser compilation</main>
+  <script>
+    export default {
+      onBeforeMount(props, state) {
+        console.log("// before the component is mounted")
+      },
+      onMounted(props, state) {
+        console.log("// right after the component is mounted on the page")
+      },
+      onBeforeUpdate(props, state) {
+        console.log("// allows recalculation of context data before the update")
+      },
+      onUpdated(props, state) {
+        console.log("// right after the component template is updated after an update call")
+      },
+      onBeforeUnmount(props, state) {
+        console.log("// before the component is removed")
+      },
+      onUnmounted(props, state) {
+        console.log("// when the component is removed from the page")
+      }
+    }
+  </script>
+  <style></style>
+</nav-bar>
