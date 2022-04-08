@@ -1,0 +1,198 @@
+{
+  "CONFIGS": [
+    {
+      "uid": "3d8a3cdaf8e6b",
+      "film": {
+        "poster": "public/asset/image/surfing.jpg",
+        "src": "public/asset/film/surfing.mp4",
+        "type": "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"",
+        "tracks": [
+          {
+            "label": "English",
+            "src": "public/asset/caption/surfing.vtt"
+          }
+        ],
+        "chapters": [31, 165]
+      },
+      "audio": {
+        "src": "public/asset/audio/generic_vo.mp3",
+        "type": "audio/mpeg",
+        "tracks": [
+          {
+            "label": "English",
+            "src": "public/asset/caption/generic_vo.vtt"
+          }
+        ]
+      },
+      "visuals": [
+        {
+          "uid": "2a7d2cdaf7e23",
+          "elements": [
+            {
+              "tag": "div",
+              "id": "7e23",
+              "text": "",
+              "classList": ["visual__container--center"],
+              "attribute": {},
+              "event": {},
+              "children": [
+                {
+                  "tag": "span",
+                  "id": "cdaf",
+                  "text": "Do you think this will\nbe the meaning of life?",
+                  "classList": ["visual__text--large"],
+                  "attribute": { "data-uid": "25a2-469d" },
+                  "event": {},
+                  "children": []
+                },
+                {
+                  "tag": "button",
+                  "id": "d2cd",
+                  "text": "No",
+                  "classList": ["visual__button--large"],
+                  "attribute": {
+                    "data-uid": "a9261934"
+                  },
+                  "event": {
+                    "onclick": "onClickAnswerBtn",
+                    "onmouseover": "onHoverAnswerBtn"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "button",
+                  "id": "d2cd",
+                  "text": "Yes",
+                  "classList": ["visual__button--large"],
+                  "attribute": {
+                    "data-uid": "c2939a04"
+                  },
+                  "event": {
+                    "onclick": "onClickAnswerBtn",
+                    "onmouseover": "onHoverAnswerBtn"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uid": "2a7d2cdaf7e23",
+          "elements": [
+            {
+              "tag": "div",
+              "id": "hg6k",
+              "text": "",
+              "classList": ["visual__container--center"],
+              "attribute": {},
+              "event": {},
+              "children": [
+                {
+                  "tag": "span",
+                  "id": "cdaf",
+                  "text": "Enter your email for a chance\nto win a free holiday.",
+                  "classList": ["visual__text--large"],
+                  "attribute": { "data-uid": "06e4e91c" },
+                  "event": {},
+                  "children": []
+                },
+                {
+                  "tag": "input",
+                  "id": "f2fr",
+                  "classList": ["visual__input--large"],
+                  "attribute": {
+                    "type": "email",
+                    "name": "email"
+                  },
+                  "event": {},
+                  "children": []
+                },
+                {
+                  "tag": "button",
+                  "id": "ee2d",
+                  "text": "Submit",
+                  "classList": ["visual__button--large"],
+                  "attribute": {
+                    "data-uid": "83268904"
+                  },
+                  "event": {
+                    "onclick": "onClickSubmitBtn",
+                    "onmouseover": "onHoverAnswerBtn"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "RUNNERS": [
+    {
+      "uid": "e9f6b0373f83d",
+      "aside": [
+        {
+          "type": "INTERACTION",
+          "detail": "ON_CLICK",
+          "actions": ["PUSH_ASIDE"]
+        },
+        {
+          "type": "IMMEDIATE",
+          "detail": null,
+          "actions": [
+            "PUSH_ASIDE::0",
+            "SHOW_VISUAL",
+            "PAUSE_AUDIO",
+            "DELAY_BY::10",
+            "PLAY_AUDIO",
+            "SEEK_AUDIO::29",
+            "HIDE_VISUAL"
+          ]
+        },
+        {
+          "type": "IMMEDIATE",
+          "detail": null,
+          "actions": [
+            "PLAY_FILM",
+            "SEEK_FILM::43",
+            "PAUSE_AUDIO",
+            "DELAY_BY::9",
+            "PLAY_AUDIO",
+            "SEEK_AUDIO::2.5",
+            "HIDE_VISUAL"
+          ]
+        },
+        {
+          "type": "IMMEDIATE",
+          "detail": null,
+          "actions": ["PLAY_FILM", "HIDE_VISUAL"]
+        }
+      ],
+      "stack": [
+        {
+          "type": "TIMER",
+          "detail": 80,
+          "actions": [
+            "PUSH_ASIDE::0",
+            "SHOW_VISUAL",
+            "LOAD_VISUAL::1",
+            "PAUSE_FILM"
+          ]
+        },
+        {
+          "type": "TIMER",
+          "detail": 30,
+          "actions": [
+            "PUSH_ASIDE::0",
+            "SHOW_VISUAL",
+            "LOAD_VISUAL::0",
+            "PAUSE_FILM"
+          ]
+        }
+      ]
+    }
+  ],
+  "SESSIONS": []
+}
