@@ -6,6 +6,6 @@ Vanilla implementations of Hiram Lab Ltd packages and libraries.
 
   [Demo](https://hiram-labs.github.io/examples/ive/)
 
-- RiotJs Browser Compiler
+- RiotJs Browser & CLI Compiler
 
   [Demo](https://hiram-labs.github.io/examples/riotjs/)
