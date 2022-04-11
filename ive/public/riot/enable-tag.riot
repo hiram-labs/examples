@@ -1,0 +1,45 @@
+<enable-tag>
+  <div id="enable-tag-main">
+    <div id="enable-tag-description">Answer Selection Disabled (i.e. this can be a timer component of sort)</div>
+    <button onclick={handleEnable}>Enable</button>
+  </div>
+  <script>
+    export default {
+      onBeforeMount(props, state) {
+        console.log("// before the component is mounted")
+      },
+      onMounted(props, state) {
+        console.log("// right after the component is mounted on the page")
+      },
+      onBeforeUpdate(props, state) {
+        console.log("// allows recalculation of context data before the update")
+      },
+      onUpdated(props, state) {
+        console.log("// right after the component template is updated after an update call")
+      },
+      onBeforeUnmount(props, state) {
+        console.log("// before the component is removed")
+      },
+      onUnmounted(props, state) {
+        console.log("// when the component is removed from the page")
+      },
+
+      handleEnable(e){
+        // console.log(e)
+        const text = this.$('#enable-tag-description')
+        text.innerText = "Now Enabled"
+        this.onInteraction(0)
+      }
+    }
+  </script>
+  <style>
+    #enable-tag-main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+    }
+  </style>
+</enable-tag>

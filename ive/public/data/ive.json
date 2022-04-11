@@ -26,7 +26,7 @@
       },
       "visuals": [
         {
-          "uid": "2a7d2cdaf7e23",
+          "uid": "4r9i1xrDf7f40",
           "elements": [
             {
               "tag": "div",
@@ -75,7 +75,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "riots": [{ "tag": "enableTag", "id": "9g33" }]
         },
         {
           "uid": "2a7d2cdaf7e23",
@@ -98,32 +99,47 @@
                   "children": []
                 },
                 {
-                  "tag": "input",
-                  "id": "f2fr",
-                  "classList": ["visual__input--large"],
-                  "attribute": {
-                    "type": "email",
-                    "name": "email"
-                  },
+                  "tag": "form",
+                  "id": "g2g2",
+                  "classList": ["visual__form--container"],
+                  "attribute": {},
                   "event": {},
-                  "children": []
-                },
-                {
-                  "tag": "button",
-                  "id": "ee2d",
-                  "text": "Submit",
-                  "classList": ["visual__button--large"],
-                  "attribute": {
-                    "data-uid": "83268904"
-                  },
-                  "event": {
-                    "onclick": "onClickSubmitBtn",
-                    "onmouseover": "onHoverAnswerBtn"
-                  },
-                  "children": []
+                  "children": [
+                    {
+                      "tag": "input",
+                      "id": "f2fr",
+                      "classList": ["visual__input--large"],
+                      "attribute": {
+                        "type": "email",
+                        "name": "email",
+                        "required": "required"
+                      },
+                      "event": {},
+                      "children": []
+                    },
+                    {
+                      "tag": "button",
+                      "id": "ee2d",
+                      "text": "Submit",
+                      "classList": ["visual__button--large"],
+                      "attribute": {
+                        "type": "submit",
+                        "data-uid": "83268904"
+                      },
+                      "event": {
+                        "onclick": "onClickSubmitBtn",
+                        "onmouseover": "onHoverAnswerBtn"
+                      },
+                      "children": []
+                    }
+                  ]
                 }
               ]
             }
+          ],
+          "riots": [
+            { "tag": "enableTag", "id": "55ft2" },
+            { "tag": "alertTag", "id": "76xs1" }
           ]
         }
       ]
@@ -135,7 +151,12 @@
       "aside": [
         {
           "type": "INTERACTION",
-          "detail": "ON_CLICK",
+          "detail": "CLICK",
+          "actions": ["PUSH_ASIDE"]
+        },
+        {
+          "type": "INTERACTION",
+          "detail": "RIOT_INTERACTION",
           "actions": ["PUSH_ASIDE"]
         },
         {
@@ -185,7 +206,7 @@
           "type": "TIMER",
           "detail": 30,
           "actions": [
-            "PUSH_ASIDE::0",
+            "PUSH_ASIDE::1",
             "SHOW_VISUAL",
             "LOAD_VISUAL::0",
             "PAUSE_FILM"
