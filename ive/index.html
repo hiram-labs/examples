@@ -31,10 +31,6 @@
       data="./public/data/ive.json"
     ></interactive-video-engine>
 
-    <script type="module">
-      import { on } from "./public/script/index.modern.js";
-
-      on("interactive-video-engine").then((ive) => (window.ive = ive));
-    </script>
+    <script type="module" src="./public/script/index.modern.js"></script>
   </body>
 </html>

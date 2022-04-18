@@ -12,7 +12,10 @@
             "src": "public/asset/caption/surfing.vtt"
           }
         ],
-        "chapters": [31, 165]
+        "chapters": [
+          { "timestamp": 31, "frame": null },
+          { "timestamp": 165, "frame": null }
+        ]
       },
       "audio": {
         "src": "public/asset/audio/generic_vo.mp3",
