@@ -25,16 +25,11 @@
   <body>
     <!-- section -->
     <interactive-video-engine
-      id="interactive-video-engine"
-      css="./public/styles/ive.css"
-      script="./public/script/ive.js"
-      data="./public/data/ive.json"
+      cssurl="./public/styles/ive.css"
+      scripturl="./public/script/ive.js"
+      dataurl="./public/data/ive.json"
     ></interactive-video-engine>
 
-    <script type="module">
-      import { on } from "./public/script/index.modern.js";
-
-      on("interactive-video-engine").then((ive) => (window.ive = ive));
-    </script>
+    <script type="module" src="./public/script/index.modern.js"></script>
   </body>
 </html>
